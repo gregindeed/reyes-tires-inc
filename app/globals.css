@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+  }
+  body {
+    @apply bg-sand-50 text-stone-850 antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  /* aggressive oblique display for big headlines (Oswald has no true italic,
+     so we skew it ourselves for a controlled racing slant) */
+  .display-italic {
+    font-style: italic;
+    transform: skewX(-6deg);
+  }
+  /* angled tag / chip — cut corners for a race-bib look */
+  .clip-slash {
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+  }
+  /* a single diagonal blaze accent bar */
+  .speed-bar {
+    @apply inline-block h-1.5 bg-blaze-500;
+    clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+  }
+  /* subtle radix select / accordion animations */
+  .anim-slide-down {
+    animation: slideDown 180ms ease-out;
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
