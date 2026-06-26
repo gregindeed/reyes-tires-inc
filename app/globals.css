@@ -52,4 +52,26 @@
       transform: translateY(0);
     }
   }
+  .anim-acc-open {
+    animation: accOpen 200ms ease-out;
+  }
+  .anim-acc-close {
+    animation: accClose 180ms ease-out;
+  }
+  @keyframes accOpen {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accClose {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 }
