@@ -14,10 +14,10 @@ export default function Hero() {
       {/* hero photo (public/hero.jpg). If absent, the SVG scene shows through. */}
       <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-grain opacity-[0.07]" />
-      {/* cinematic darken + legibility gradients */}
-      <div className="absolute inset-0 bg-ink-950/35" />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink-950/70 via-transparent to-ink-950/85" />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink-950/90 via-ink-950/40 to-transparent" />
+      {/* cinematic darken + legibility gradients (lighter — let the photo show) */}
+      <div className="absolute inset-0 bg-ink-950/15" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink-950/45 via-transparent to-ink-950/65" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink-950/80 via-ink-950/20 to-transparent" />
       {/* top blaze rule */}
       <div className="absolute inset-x-0 top-0 z-10 h-1 bg-blaze-500" />
 
