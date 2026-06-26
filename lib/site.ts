@@ -27,6 +27,14 @@ export const site = {
 
   mapsHref:
     "https://www.google.com/maps/dir/?api=1&destination=8637+Troy+St+B+Spring+Valley+CA+91977",
+  mapEmbed:
+    "https://www.google.com/maps?q=8637+Troy+St+B+Spring+Valley+CA+91977&output=embed",
+
+  // Social profiles — fill these in to light up the footer icons.
+  social: {
+    facebook: "",
+    instagram: "",
+  },
 
   // Areas served (local SEO)
   areaServed: ["Spring Valley, CA"],
@@ -46,6 +54,13 @@ export const site = {
     { day: "Friday", time: "8:00 AM – 6:00 PM" },
     { day: "Saturday", time: "8:00 AM – 5:00 PM" },
     { day: "Sunday", time: "Closed" },
+  ],
+
+  // Compact hours for the footer
+  hoursShort: [
+    { days: "Mon – Fri", time: "8 AM – 6 PM" },
+    { days: "Saturday", time: "8 AM – 5 PM" },
+    { days: "Sunday", time: "Closed" },
   ],
 
   // Opening hours in schema.org format (24h)
