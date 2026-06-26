@@ -41,10 +41,9 @@ export default function Hero() {
           <span className="speed-bar mt-5 w-28 bg-royal-500" />
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-sand-200/90">
-            Reyes Tires Inc is Spring Valley&apos;s full truck build shop —
-            lifts and long-travel suspension, aftermarket wheels and tires,
-            brakes, alignment, repairs and maintenance. Trophy-truck attitude,
-            honest neighborhood pricing.
+            Spring Valley&apos;s specialists in suspension, tires &amp; wheels —
+            plus brakes, alignment, repairs and maintenance under one roof.
+            Trophy-truck attitude, honest neighborhood pricing.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

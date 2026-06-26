@@ -7,26 +7,22 @@ import {
   Octagon,
 } from "lucide-react";
 
+// Core three first (our specialty), then everyday services under one roof.
 const services = [
-  {
-    icon: CircleDot,
-    title: "New & Used Tires",
-    desc: "Quality new tires and inspected used sets at fair prices. Mount, balance, and out the door same day.",
-  },
-  {
-    icon: Wrench,
-    title: "Repairs & Maintenance",
-    desc: "Oil changes, diagnostics, and everyday repairs done honestly — we keep your vehicle running right, not just rolling.",
-  },
   {
     icon: ArrowUpFromLine,
     title: "Lifts & Suspension",
-    desc: "Lift and leveling kits, shocks, and struts installed right — clear bigger tires and get the stance and ride you want.",
+    desc: "Lift and leveling kits, shocks, and struts from the brands you trust — installed right for the stance and ride you want.",
+  },
+  {
+    icon: CircleDot,
+    title: "New & Used Tires",
+    desc: "All-terrains, mud-terrains, and street performance — quality new tires and inspected used sets, mounted and balanced same day.",
   },
   {
     icon: Disc3,
     title: "Aftermarket Wheels",
-    desc: "Huge selection of rims and custom wheel-and-tire packages. We'll dial in the perfect fitment for your ride.",
+    desc: "A huge selection of rims and custom wheel-and-tire packages, with the perfect fitment dialed in for your ride.",
   },
   {
     icon: Octagon,
@@ -36,7 +32,12 @@ const services = [
   {
     icon: Gauge,
     title: "Wheel Alignment",
-    desc: "Precision alignment that saves your tires and keeps the truck tracking straight after a lift.",
+    desc: "Precision alignment that saves your tires and keeps you tracking straight after a lift.",
+  },
+  {
+    icon: Wrench,
+    title: "Repairs & Maintenance",
+    desc: "Oil changes, diagnostics, and honest everyday repairs to keep your vehicle running right.",
   },
 ];
 
@@ -49,11 +50,12 @@ export default function Services() {
             What We Do
           </p>
           <h2 className="mt-3 font-display text-4xl font-700 uppercase tracking-tight text-stone-850 sm:text-5xl">
-            Built for trucks, daily drivers &amp; everything between
+            Suspension, Tires &amp; Wheels
           </h2>
           <p className="mt-4 text-lg text-stone-750">
-            From a fresh set of tires to repairs, maintenance, and a full
-            lift-and-suspension build, the Reyes crew handles it under one roof.
+            Our specialty — dialed in for trucks and daily drivers alike. We also
+            handle brakes, alignment, repairs and maintenance, all under one
+            roof.
           </p>
         </div>
 

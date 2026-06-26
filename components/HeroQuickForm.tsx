@@ -28,6 +28,7 @@ export default function HeroQuickForm() {
   const [need, setNeed] = useState("");
   const [name, setName] = useState("");
   const [vehicle, setVehicle] = useState("");
+  const [notes, setNotes] = useState("");
   const [error, setError] = useState("");
 
   function handleSubmit(e: React.FormEvent) {
@@ -44,6 +45,7 @@ export default function HeroQuickForm() {
       `Name: ${name}`,
       vehicle ? `Vehicle: ${vehicle}` : "",
       need ? `Looking for: ${need}` : "",
+      notes ? `Details: ${notes}` : "",
     ].filter(Boolean);
 
     const url = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
@@ -114,6 +116,22 @@ export default function HeroQuickForm() {
               placeholder="Pick a service"
               options={needOptions}
               dark
+            />
+          </div>
+          <div>
+            <Label.Root htmlFor="hq-notes" className={labelCls}>
+              Additional info{" "}
+              <span className="font-500 normal-case text-sand-200/50">
+                (optional)
+              </span>
+            </Label.Root>
+            <textarea
+              id="hq-notes"
+              rows={2}
+              className={`${fieldCls} resize-none`}
+              placeholder="Tire size, wheel specs, lift height, anything helpful…"
+              value={notes}
+              onChange={(e) => setNotes(e.target.value)}
             />
           </div>
         </div>

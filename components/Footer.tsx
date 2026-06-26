@@ -9,6 +9,7 @@ import {
   Instagram,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import Faq from "./Faq";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -257,6 +258,9 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
+      {/* nested FAQ */}
+      <Faq />
 
       {/* bottom bar */}
       <div className="relative border-t border-sand-200/10">

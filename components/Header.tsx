@@ -8,7 +8,6 @@ const links = [
   { href: "#builds", label: "Builds" },
   { href: "#services", label: "Services" },
   { href: "#faq", label: "FAQ" },
-  { href: "#visit", label: "Visit" },
 ];
 
 export default function Header() {
@@ -20,17 +19,13 @@ export default function Header() {
         <a
           href="#top"
           aria-label="Reyes Tires — We Perform Better"
-          className="group relative inline-flex items-center"
+          className="group flex flex-col leading-none"
         >
-          {/* slanted black banner */}
-          <span className="absolute inset-0 -skew-x-[14deg] bg-ink-950 transition-colors group-hover:bg-stone-850" />
-          <span className="relative z-10 flex flex-col px-5 py-1.5 leading-none">
-            <span className="font-display text-xl font-700 italic uppercase tracking-tight text-sand-50">
-              Reyes Tires
-            </span>
-            <span className="mt-1 text-[8px] font-600 italic uppercase tracking-[0.32em] text-royal-400">
-              We Perform Better
-            </span>
+          <span className="font-display text-2xl font-700 italic uppercase tracking-tight text-stone-950 sm:text-3xl">
+            Reyes Tires
+          </span>
+          <span className="mt-0.5 text-[9px] font-700 italic uppercase tracking-[0.3em] text-royal-500 sm:text-[10px]">
+            We Perform Better
           </span>
         </a>
 
@@ -58,7 +53,7 @@ export default function Header() {
             href="#quote"
             className="rounded-md bg-blaze-500 px-4 py-2 text-sm font-700 uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-blaze-600"
           >
-            Start a Build
+            Get a Quote
           </a>
           <button
             aria-label="Menu"
