@@ -26,7 +26,7 @@ export default function Header() {
               Reyes Tires
             </span>
             <span className="text-[10px] font-700 uppercase tracking-[0.2em] text-blaze-600">
-              Truck Build Shop
+              We Perform Better
             </span>
           </span>
         </a>
