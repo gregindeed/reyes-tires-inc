@@ -1,20 +1,24 @@
 import { Star, MapPin, ArrowRight } from "lucide-react";
 import { site } from "@/lib/site";
 import HeroQuickForm from "./HeroQuickForm";
+import HeroScene from "./HeroScene";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-ink-900">
-      {/* dark wash + grain + race energy */}
-      <div className="absolute inset-0 bg-gradient-to-br from-ink-800 via-ink-900 to-ink-950" />
-      <div className="absolute inset-0 bg-grain opacity-[0.08]" />
-      <div className="absolute -right-24 -top-24 h-[34rem] w-[34rem] rounded-full bg-blaze-600/20 blur-3xl" />
-      {/* diagonal hazard stripes sweeping in from the right */}
-      <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-stripes opacity-40 [mask-image:linear-gradient(to_left,black,transparent)] lg:block" />
+    <section
+      id="top"
+      className="relative flex min-h-[640px] items-center overflow-hidden bg-ink-900 lg:min-h-[720px]"
+    >
+      {/* backlit desert / lifted-truck scene */}
+      <HeroScene className="absolute inset-0 h-full w-full" />
+      <div className="absolute inset-0 bg-grain opacity-[0.07]" />
+      {/* legibility gradients — keep headline + form readable over the scene */}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink-950/70 via-transparent to-ink-950/85" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink-950/85 via-ink-950/30 to-transparent" />
       {/* top blaze rule */}
-      <div className="absolute inset-x-0 top-0 h-1 bg-blaze-500" />
+      <div className="absolute inset-x-0 top-0 z-10 h-1 bg-blaze-500" />
 
-      <div className="container-x relative grid gap-12 py-20 sm:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="container-x relative z-10 grid w-full gap-12 py-20 sm:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <div className="flex flex-wrap items-center gap-3">
             <span className="clip-slash bg-blaze-500 px-3.5 py-1 text-xs font-700 uppercase tracking-widest text-ink-950">
@@ -54,7 +58,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-sand-200/25 px-6 py-3.5 font-semibold text-sand-50 transition-colors hover:bg-sand-50/5"
             >
-              <MapPin className="h-4 w-4 text-clay-400" />
+              <MapPin className="h-4 w-4 text-blaze-400" />
               Get Directions
             </a>
           </div>
