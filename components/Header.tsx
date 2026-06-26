@@ -17,15 +17,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-sand-200/70 bg-sand-50/85 backdrop-blur">
       <div className="container-x flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5">
-          <span className="clip-slash flex h-9 w-9 items-center justify-center bg-ink-900 font-display text-lg font-700 tracking-tight text-blaze-500">
-            RT
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-700 uppercase tracking-wide text-stone-850">
+        <a
+          href="#top"
+          aria-label="Reyes Tires — We Perform Better"
+          className="group relative inline-flex items-center"
+        >
+          {/* slanted black banner */}
+          <span className="absolute inset-0 -skew-x-[14deg] bg-ink-950 transition-colors group-hover:bg-stone-850" />
+          <span className="relative z-10 flex flex-col px-5 py-1.5 leading-none">
+            <span className="font-display text-xl font-700 italic uppercase tracking-tight text-sand-50">
               Reyes Tires
             </span>
-            <span className="text-[10px] font-700 uppercase tracking-[0.2em] text-blaze-600">
+            <span className="mt-1 text-[8px] font-600 italic uppercase tracking-[0.32em] text-sand-50/85">
               We Perform Better
             </span>
           </span>
