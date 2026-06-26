@@ -58,7 +58,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-3">
             <a
               href="#quote"
-              className="group inline-flex items-center gap-2 rounded-md bg-blaze-500 px-6 py-3 font-700 uppercase tracking-wide text-ink-950 shadow-blaze transition-colors hover:bg-blaze-400"
+              className="group inline-flex items-center gap-2 rounded-md bg-blaze-500 px-6 py-3 font-700 uppercase tracking-wide text-white shadow-blaze transition-colors hover:bg-blaze-600"
             >
               Get a Free Quote
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -86,7 +86,7 @@ export default function Footer() {
               <span className="font-display text-2xl font-700 italic uppercase tracking-tight text-sand-50">
                 Reyes Tires
               </span>
-              <span className="mt-1 text-[9px] font-600 italic uppercase tracking-[0.32em] text-blaze-500">
+              <span className="mt-1 text-[9px] font-600 italic uppercase tracking-[0.32em] text-royal-400">
                 We Perform Better
               </span>
             </span>

@@ -15,7 +15,7 @@ export default function TrustStrip() {
           <span key={it} className="flex items-center gap-8">
             {it}
             {i < items.length - 1 && (
-              <span className="hidden h-1.5 w-1.5 rotate-45 bg-blaze-500 sm:inline-block" />
+              <span className="hidden h-1.5 w-1.5 rotate-45 bg-royal-500 sm:inline-block" />
             )}
           </span>
         ))}

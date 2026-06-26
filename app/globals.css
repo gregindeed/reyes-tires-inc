@@ -35,7 +35,7 @@
   }
   /* a single diagonal blaze accent bar */
   .speed-bar {
-    @apply inline-block h-1.5 bg-blaze-500;
+    @apply inline-block h-1.5;
     clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
   }
   /* subtle radix select / accordion animations */

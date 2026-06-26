@@ -63,7 +63,7 @@ export default function Services() {
               key={s.title}
               className="group rounded-xl border border-sand-200 bg-white p-7 shadow-card transition-all hover:-translate-y-1 hover:border-blaze-500/50"
             >
-              <div className="clip-slash flex h-12 w-12 items-center justify-center bg-blaze-50 text-blaze-600 transition-colors group-hover:bg-blaze-500 group-hover:text-ink-950">
+              <div className="clip-slash flex h-12 w-12 items-center justify-center bg-blaze-50 text-blaze-600 transition-colors group-hover:bg-blaze-500 group-hover:text-white">
                 <s.icon className="h-6 w-6" />
               </div>
               <h3 className="mt-5 font-display text-xl font-600 uppercase tracking-wide text-stone-850">

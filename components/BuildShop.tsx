@@ -47,7 +47,7 @@ export default function BuildShop() {
 
       <div className="container-x relative">
         <div className="max-w-2xl">
-          <span className="clip-slash inline-block bg-blaze-500 px-3.5 py-1 text-xs font-700 uppercase tracking-widest text-ink-950">
+          <span className="clip-slash inline-block bg-blaze-500 px-3.5 py-1 text-xs font-700 uppercase tracking-widest text-white">
             The Build Shop
           </span>
           <h2 className="mt-5 font-display text-4xl font-700 uppercase leading-[0.95] tracking-tight text-sand-50 sm:text-5xl">
@@ -85,7 +85,7 @@ export default function BuildShop() {
 
         <a
           href="#quote"
-          className="group mt-10 inline-flex items-center gap-2 rounded-md bg-blaze-500 px-7 py-3.5 font-700 uppercase tracking-wide text-ink-950 shadow-blaze transition-colors hover:bg-blaze-400"
+          className="group mt-10 inline-flex items-center gap-2 rounded-md bg-blaze-500 px-7 py-3.5 font-700 uppercase tracking-wide text-white shadow-blaze transition-colors hover:bg-blaze-600"
         >
           Start Your Build
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -101,7 +101,7 @@ export default function BuildShop() {
               className="flex items-center gap-8 font-display text-sm font-600 uppercase tracking-[0.2em] text-sand-200/60"
             >
               {m}
-              <span className="h-1.5 w-1.5 rotate-45 bg-blaze-500" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-royal-500" />
             </span>
           ))}
         </div>

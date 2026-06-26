@@ -28,7 +28,7 @@ export default function Header() {
             <span className="font-display text-xl font-700 italic uppercase tracking-tight text-sand-50">
               Reyes Tires
             </span>
-            <span className="mt-1 text-[8px] font-600 italic uppercase tracking-[0.32em] text-sand-50/85">
+            <span className="mt-1 text-[8px] font-600 italic uppercase tracking-[0.32em] text-royal-400">
               We Perform Better
             </span>
           </span>
@@ -56,7 +56,7 @@ export default function Header() {
           </a>
           <a
             href="#quote"
-            className="rounded-md bg-blaze-500 px-4 py-2 text-sm font-700 uppercase tracking-wide text-ink-950 shadow-sm transition-colors hover:bg-blaze-400"
+            className="rounded-md bg-blaze-500 px-4 py-2 text-sm font-700 uppercase tracking-wide text-white shadow-sm transition-colors hover:bg-blaze-600"
           >
             Start a Build
           </a>

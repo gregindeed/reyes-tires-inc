@@ -178,7 +178,7 @@ export default function QuoteForm() {
 
             <button
               type="submit"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-blaze-500 px-6 py-3.5 font-700 uppercase tracking-wide text-ink-950 shadow-blaze transition-colors hover:bg-blaze-400 sm:w-auto"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-blaze-500 px-6 py-3.5 font-700 uppercase tracking-wide text-white shadow-blaze transition-colors hover:bg-blaze-600 sm:w-auto"
             >
               <Send className="h-4 w-4" />
               Request My Quote

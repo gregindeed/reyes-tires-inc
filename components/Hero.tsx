@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="container-x relative z-10 grid w-full gap-12 py-20 sm:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="clip-slash bg-blaze-500 px-3.5 py-1 text-xs font-700 uppercase tracking-widest text-ink-950">
+            <span className="clip-slash bg-blaze-500 px-3.5 py-1 text-xs font-700 uppercase tracking-widest text-white">
               Full Truck Build Shop
             </span>
             <span className="text-xs font-semibold uppercase tracking-widest text-sand-200/80">
@@ -38,7 +38,7 @@ export default function Hero() {
               Desert-Ready
             </span>
           </h1>
-          <span className="speed-bar mt-5 w-28" />
+          <span className="speed-bar mt-5 w-28 bg-royal-500" />
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-sand-200/90">
             Reyes Tires Inc is Spring Valley&apos;s full truck build shop —
@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#quote"
-              className="group inline-flex items-center gap-2 rounded-md bg-blaze-500 px-6 py-3.5 font-700 uppercase tracking-wide text-ink-950 shadow-blaze transition-colors hover:bg-blaze-400"
+              className="group inline-flex items-center gap-2 rounded-md bg-blaze-500 px-6 py-3.5 font-700 uppercase tracking-wide text-white shadow-blaze transition-colors hover:bg-blaze-600"
             >
               Start Your Build
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
