@@ -13,7 +13,7 @@ export const site = {
   phoneE164: "+16194677490",
   whatsapp: "16198325500", // wa.me format
   whatsappDisplay: "(619) 832-5500",
-  email: "quotes@reyestires.com",
+  email: "reyestire8740@gmail.com",
 
   // Address (split for structured data)
   address: "8637 Troy St B, Spring Valley, CA 91977",
