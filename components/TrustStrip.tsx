@@ -22,18 +22,24 @@ const brands: Brand[] = [
 ];
 
 function BrandItem({ b }: { b: Brand }) {
-  const [broken, setBroken] = useState(false);
+  // Show the text wordmark until a real logo file successfully loads.
+  // Missing files simply stay as text — no broken-image icons.
+  const [loaded, setLoaded] = useState(false);
   return (
     <span className="flex items-center gap-10">
-      {!broken ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={b.logo}
-          alt={b.name}
-          onError={() => setBroken(true)}
-          className="h-7 w-auto opacity-80 brightness-0 invert"
-        />
-      ) : (
+      {/* probe / logo image (hidden until it actually loads) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={b.logo}
+        alt={b.name}
+        onLoad={() => setLoaded(true)}
+        className={
+          loaded
+            ? "h-7 w-auto opacity-80 brightness-0 invert"
+            : "pointer-events-none absolute h-0 w-0 opacity-0"
+        }
+      />
+      {!loaded && (
         <span className="font-display text-lg font-600 uppercase tracking-wide text-sand-200/80">
           {b.name}
         </span>
